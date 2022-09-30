@@ -4,7 +4,7 @@ const characters = ref([])
 
 const useCharacters = () => {
   const fetchCharacters = () => {
-    for (let index = 0; index < 12; index++) {
+    for (let index = 0; index < 2; index++) {
       characters.value.push({
         _id: characters.value.length,
         name: `Character ${characters.value.length}`,
