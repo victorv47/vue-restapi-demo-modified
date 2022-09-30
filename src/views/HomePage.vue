@@ -1,10 +1,11 @@
 <script setup>
-  import { ref } from 'vue'
-  const title = ref('Hello There ✋')
+  import BaseCard from '@/components/BaseCard.vue'
 </script>
 
 <template>
-  <main class="flex min-h-screen items-center justify-center">
-    <h1 class="text-6xl font-thin text-slate-800">{{ title }}</h1>
+  <main class="min-h-screen bg-gradient-to-tr from-fuchsia-900 to-red-700">
+    <div class="container mx-auto grid grid-cols-4 gap-4 pt-8">
+      <BaseCard v-for="n in 10" :key="n" />
+    </div>
   </main>
 </template>
