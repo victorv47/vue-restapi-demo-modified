@@ -34,5 +34,3 @@ const useCharacters = () => {
 }
 
 export default useCharacters
-
-//change made
